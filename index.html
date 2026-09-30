@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home | Glow Fitness</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#080a09;--panel:#111411;--text:#f5f7f4;--muted:#a8b0a9;--lime:#c8ff36;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:30;background:rgba(8,10,9,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font:900 29px/1 Arial,sans-serif;letter-spacing:-1.5px}.logo span{color:var(--lime)}.links{display:flex;gap:25px;font-size:13px;font-weight:600}.links a:hover,.links .active{color:var(--lime)}.navbtn{border:1px solid var(--lime);color:var(--lime);padding:10px 15px;border-radius:999px;font-size:12px;font-weight:800}
+.hero{min-height:calc(100vh - 76px);display:grid;place-items:center;background:radial-gradient(circle at 78% 28%,rgba(200,255,54,.14),transparent 28%),linear-gradient(125deg,#080a09,#111511)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}.kicker{color:var(--lime);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1,.title{font:900 clamp(65px,9vw,120px)/.82 Arial,sans-serif;letter-spacing:-6px;text-transform:uppercase;margin:18px 0}.hero h1 em,.lime{color:var(--lime);font-style:normal}.lead{color:var(--muted);max-width:560px;font-size:17px;margin:25px 0}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:14px 21px;border-radius:5px;font-size:12px;font-weight:800}.primary{background:var(--lime);color:#080a09}.secondary{border:1px solid var(--line);background:var(--panel)}
+.visual{height:520px;border-radius:18px;border:1px solid var(--line);overflow:hidden;position:relative;background:#111}.visual img{width:100%;height:100%;object-fit:cover;filter:brightness(.55);}.visual:after{content:"GLOW FITNESS";position:absolute;inset:auto 25px 25px;font:900 48px/.9 Arial,sans-serif;letter-spacing:-3px}
+.section{padding:100px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}.head h2{font:900 clamp(50px,6vw,80px)/.85 Arial,sans-serif;text-transform:uppercase;letter-spacing:-4px;margin-top:10px}.head p{max-width:450px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);border-block:1px solid var(--line)}.stat{padding:35px;text-align:center;border-right:1px solid var(--line)}.stat:nth-child(2){border-right:0}.stat b{display:block;color:var(--lime);font:900 64px/1 Arial}.stat span{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:var(--panel);border:1px solid var(--line);padding:30px;min-height:245px}.num{color:var(--lime);font-size:11px;font-weight:800;letter-spacing:1px}.card h3{font:900 32px/1 Arial;text-transform:uppercase;margin:40px 0 10px}.card p{color:var(--muted);font-size:14px}
+.quote{border-left:2px solid var(--lime);padding:20px 25px;margin-bottom:18px;background:var(--panel);color:#dfe4df}.quote small{display:block;color:var(--lime);font-weight:700;margin-top:10px}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.gallery a{display:block;grid-column:span 6;height:330px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}.gallery a:nth-child(3),.gallery a:nth-child(4){grid-column:span 6}.gallery img{width:100%;height:100%;object-fit:cover;transition:.4s}.gallery a:hover img{transform:scale(1.04)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:15px}.contact-card{padding:32px;background:var(--panel);border:1px solid var(--line)}.contact-card h3{font:900 36px Arial;text-transform:uppercase;margin:12px 0}.contact-card p{color:var(--muted);margin-bottom:22px}.note{color:var(--muted);font-size:12px;margin-top:18px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#7f8781;font-size:12px}.foot{display:flex;justify-content:space-between}
+@media(max-width:850px){.links{display:none}.hero{padding:70px 0}.hero-grid,.contact{grid-template-columns:1fr}.visual{height:370px}.cards{grid-template-columns:1fr}.head{display:block}.head p{margin-top:20px}.gallery a,.gallery a:nth-child(3),.gallery a:nth-child(4){grid-column:span 12;height:280px}}
+@media(max-width:520px){.hero h1,.title{font-size:62px;letter-spacing:-4px}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.foot{display:block}.foot span+span{display:block;margin-top:7px}}
+</style><style>
+/* Mobile-first responsive enhancements */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{overflow-x:hidden}
+img{max-width:100%;height:auto}
+.container{width:min(1120px,92%);margin-inline:auto}
+@media (max-width:768px){
+  header,.navbar,.nav,.topbar{padding-left:18px!important;padding-right:18px!important}
+  nav ul,.nav-links{gap:10px!important;flex-wrap:wrap!important}
+  nav a{font-size:13px!important}
+  h1{font-size:clamp(34px,10vw,54px)!important;line-height:1.05!important}
+  h2{font-size:clamp(28px,8vw,40px)!important}
+  .hero,.hero-section{min-height:auto!important;padding:72px 0 55px!important}
+  .hero-content,.hero-grid,.grid,.cards,.features,.stats,.footer-grid{
+    grid-template-columns:1fr!important;
+  }
+  .card,.review-card,.feature-card{padding:22px!important}
+  .gallery-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}
+  .gallery-grid img{height:180px!important;object-fit:cover!important}
+  .btn,.button{width:100%!important;text-align:center!important}
+  footer{padding:38px 0!important}
+}
+@media (max-width:480px){
+  .gallery-grid{grid-template-columns:1fr!important}
+  .gallery-grid img{height:240px!important}
+  .rating-number{font-size:42px!important}
+}
+
+.reviews-section{padding:88px 0;background:#0b0b0b;color:#fff}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.eyebrow{display:inline-block;color:#b8ff32;font-size:12px;font-weight:800;letter-spacing:2px;margin-bottom:12px}
+.section-head h2{margin:0 0 12px;font-size:44px}
+.section-head p{margin:0;color:#aaa}
+.reviews-summary{width:min(1000px,92%);margin:0 auto 34px;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:stretch}
+.rating-box,.review-highlights{border:1px solid #252525;border-radius:20px;background:#111;padding:26px}
+.rating-box{text-align:center;display:flex;flex-direction:column;justify-content:center}
+.rating-number{font-size:58px;font-weight:900;line-height:1}
+.stars{color:#b8ff32;letter-spacing:2px;font-size:16px;margin:10px 0}
+.rating-count{color:#aaa;font-size:14px}
+.review-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.review-highlights div{padding:16px;border-radius:14px;background:#171717}
+.review-highlights strong{display:block;font-size:15px;margin-bottom:7px}
+.review-highlights span{display:block;color:#aaa;font-size:13px;line-height:1.5}
+.reviews-grid{width:min(1000px,92%);margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review-card{border:1px solid #252525;border-radius:20px;background:#111;padding:24px;min-height:230px;display:flex;flex-direction:column}
+.review-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:15px}
+.review-name{font-weight:800}
+.review-card p{color:#c7c7c7;line-height:1.7;font-size:14px;margin:0}
+</style></head><body><nav><div class="container nav"><a class="logo" href="index.html">GLOW<span>.</span>FITNESS</a><div class="links"><a class="active" href="index.html">Home</a><a class="" href="about.html">About</a><a class="" href="programs.html">Training</a><a class="" href="gallery.html">Gallery</a><a href="#reviews">Reviews</a><a class="" href="contact.html">Contact</a></div><a class="navbtn" href="https://wa.me/917094131131?text=Hi%20Glow%20Fitness%20%F0%9F%91%8B%20I%20would%20like%20to%20know%20more%20about%20your%20gym%20and%20training." target="_blank">ENQUIRE</a></div></nav><main><section class="hero"><div class="container hero-grid"><div><div class="kicker">Gym · Chennai</div><h1>Train.<br><em>Glow.</em><br>Transform.</h1><p class="lead">A positive, motivating and clean fitness environment focused on personal attention, better training and consistent progress.</p><div class="actions"><a class="btn primary" href="https://wa.me/917094131131?text=Hi%20Glow%20Fitness%20%F0%9F%91%8B%20I%20would%20like%20to%20know%20more%20about%20your%20gym%20and%20training." target="_blank">ENQUIRE ON WHATSAPP ↗</a><a class="btn secondary" href="gallery.html">VIEW GALLERY</a></div></div><div class="visual"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn2pIlsUTQ2SauYr8Yd85U6XONf7_JQC7wirtmcja56f5UXo5ehn4jMgeJMsCwR13ZdkUDEXVswiD9G5kR5hmSxwnKdjhk-kWg2jETk3WaTxRYklqKnDQ9uM3fhI9OWu04PTRk34zGNFo63=w397-h298-k-no" alt="Glow Fitness gym"><span></span></div></div></section>
+<section class="section"><div class="container"><div class="head"><div><div class="kicker">Glow Fitness</div><h2>Real reviews.<br>Real progress.</h2></div><p>Google Maps currently shows a <strong>5.0 rating from 20 reviews</strong>. Review themes include personalized training, increased strength, stamina improvement and excellent training.</p></div><div class="stats"><div class="stat"><b>5.0</b><span>Google rating</span></div><div class="stat"><b>20</b><span>Google reviews</span></div></div></div></section>
+<section class="reviews-section" id="reviews">
+  <div class="section-head">
+    <span class="eyebrow">GOOGLE REVIEWS</span>
+    <h2>What Members Say</h2>
+    <p>Real feedback shared by Glow Fitness members.</p>
+  </div>
+
+  <div class="reviews-summary">
+    <div class="rating-box">
+      <div class="rating-number">5.0</div>
+      <div class="stars">★★★★★</div>
+      <div class="rating-count">20 Reviews</div>
+    </div>
+    <div class="review-highlights">
+      <div><strong>Positive Atmosphere</strong><span>Motivating &amp; welcoming environment</span></div>
+      <div><strong>Personal Attention</strong><span>Members mention supportive training</span></div>
+      <div><strong>Progress</strong><span>Strength, stamina, toning &amp; weight-loss themes</span></div>
+    </div>
+  </div>
+
+  <div class="reviews-grid">
+    <article class="review-card">
+      <div class="review-top"><span class="review-name">Abitha V</span><span class="stars">★★★★★</span></div>
+      <p>“Great experience. Trainers are friendly, supportive and professional. Shilpa Akka is kind and encouraging, corrects posture and stays with members throughout the workout.”</p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-top"><span class="review-name">Pooja Pooja</span><span class="stars">★★★★★</span></div>
+      <p>“Excellent experience. The ambience is attractive, energetic and motivating. The training is outstanding and the trainers give personal attention.”</p>
+    </article>
+
+    <article class="review-card">
+      <div class="review-top"><span class="review-name">Jo Krish</span><span class="stars">★★★★★</span></div>
+      <p>“I had no prior knowledge of gym training. After joining, the experience has been very good, with visible body changes, better toning, weight loss and increased strength.”</p>
+    </article>
+  </div>
+</section>
+
+</main><footer><div class="container foot"><span>© 2026 Glow Fitness</span><span>15 Pallavan Lane · Chennai</span></div></footer></body></html>
