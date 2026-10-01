@@ -84,6 +84,53 @@ nav .nav-cta,nav .btn,nav .navbtn{font-size:11px!important;font-weight:800!impor
  nav .logo{font-size:22px!important}
  nav .nav-cta,nav .btn,nav .navbtn{font-size:11px!important;height:38px!important;padding:10px 13px!important}
 }
+</style><style>
+/* FINAL HEADER SPACING — identical on every page */
+@media(min-width:801px){
+  nav>.container.nav{
+    width:calc(100% - 136px)!important;
+    max-width:none!important;
+    margin-left:68px!important;
+    margin-right:68px!important;
+    padding:0!important;
+  }
+  nav .nav{
+    height:78px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:0!important;
+  }
+  nav .logo{margin-right:0!important;flex:0 0 auto!important}
+  nav .links{
+    display:flex!important;
+    align-items:center!important;
+    gap:28px!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  nav .links a{
+    display:block!important;
+    margin:0!important;
+    padding:0!important;
+    font-family:Inter,Arial,sans-serif!important;
+    font-size:12px!important;
+    font-weight:700!important;
+    line-height:1!important;
+  }
+  nav .nav-cta,nav .btn,nav .navbtn{
+    flex:0 0 auto!important;
+    margin:0!important;
+  }
+}
+@media(max-width:800px){
+  nav>.container.nav{
+    width:92%!important;
+    max-width:none!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
 </style></head>
 <body>
 <nav><div class="container nav">
