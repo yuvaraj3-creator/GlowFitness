@@ -74,6 +74,13 @@ nav>.container.nav{width:min(1240px,92vw)!important;max-width:1240px!important;m
 @media(max-width:800px){
  nav>.container.nav{width:92vw!important;max-width:none!important}
 }
+</style><style>
+/* FINAL: identical page viewport so navbar never shifts between pages */
+html{overflow-y:scroll!important;scrollbar-gutter:stable}
+body{overflow-x:hidden!important}
+nav{left:0!important;right:0!important;width:100%!important}
+nav>.container.nav{width:92%!important;max-width:1240px!important;margin-left:auto!important;margin-right:auto!important}
+@media(max-width:800px){nav>.container.nav{width:92%!important;max-width:none!important}}
 </style></head>
 <body>
 <nav><div class="container nav">
