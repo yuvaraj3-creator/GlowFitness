@@ -67,6 +67,13 @@ nav .nav{height:78px}
   nav>.container.nav{width:92%;max-width:none}
   nav .nav{height:78px}
 }
+</style><style>
+/* Keep navbar locked to the viewport so scrollbar width cannot shift it */
+nav{left:0!important;right:auto!important;width:100vw!important}
+nav>.container.nav{width:min(1240px,92vw)!important;max-width:1240px!important;margin-left:auto!important;margin-right:auto!important}
+@media(max-width:800px){
+ nav>.container.nav{width:92vw!important;max-width:none!important}
+}
 </style></head>
 <body>
 <nav><div class="container nav">
