@@ -43,6 +43,14 @@ body{overflow-x:hidden!important}
 nav{left:0!important;right:0!important;width:100%!important}
 nav>.container.nav{width:92%!important;max-width:1240px!important;margin-left:auto!important;margin-right:auto!important}
 @media(max-width:800px){nav>.container.nav{width:92%!important;max-width:none!important}}
+</style><style>
+/* Desktop navbar: identical flex positioning on every page */
+@media(min-width:801px){
+ nav .nav{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:0!important}
+ nav .logo{margin-right:0!important}
+ nav .links{display:flex!important}
+ nav .nav-cta,.nav>.btn,.nav>.navbtn{margin-left:0!important}
+}
 </style></head>
 <body>
 <nav><div class="container nav">
